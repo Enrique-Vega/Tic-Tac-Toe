@@ -4,24 +4,46 @@ main {
     justify-content: center;
     align-items: center;
 }
+.box {
+  display: flex;
+  height: 100%;
+  width: 100%
+}
 
-section {
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  min-height: 30vh;
+  margin: 5px;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  background-color: black;
+  /* background-image: linear-gradient(top right, #ffa949 10%, hotpink 40%, dodgerblue 95%); */
+  color: white;
+  box-shadow: 9px 9px 11px 0px rgba(0,0,0,0.5);
+}
+
+.section:hover {
+  opacity: 0.8
+}
+
+.section-change {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 25vw;
-    min-height: 33vh;
-    border: 5px solid black;
+    width: 30vw;
+    min-height: 30vh;
+    margin: 5px;
     font-family: Helvetica, sans-serif;
     font-weight: bold;
     font-size: 2em;
-    background-image: linear-gradient(top right, #ffa949 10%, hotpink 40%, dodgerblue 95%);
+    background-color: black;
     color: white;
-}
-
-.Square {
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-image: url("./assets/unicorn.png"); */
 }
